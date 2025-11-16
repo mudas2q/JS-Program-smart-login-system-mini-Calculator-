@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* For JavaScript Styling */
+      h1 {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 1.3rem;
+      }
+
+      i {
+        color: rgb(255, 123, 0);
+        font-style: normal;
+        font-weight: bolder;
+        letter-spacing: 0.07em;
+        text-shadow: 2px 2px #000000;
+      }
+      button{
+        position: fixed;
+        bottom: 0;
+        font-size: 1.3rem;
+        padding: 0.7rem 1rem;
+        font-weight: bold;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button
+      onclick="let Student_marks = prompt('Enter Your Marks?');
+const check_marks =
+      (Student_marks >= 100) ? 'Grade A+ · Perfect Score'
+    : (Student_marks >= 80)  ? 'Grade A1 · Excellent'
+    : (Student_marks >= 70)  ? 'Grade A · Very Good'
+    : (Student_marks >= 60)  ? 'Grade B · Good'
+    : (Student_marks >= 50)  ? 'Grade C · Average'
+    : (Student_marks >= 0)   ? 'Fail · Try Again'
+    : 'Invalid Input';
+document.write(`<h1> ${check_marks} </h1>`);
+"
+    >
+      Check Your Result!
+    </button>
+    <script src="./script.js"></script>
+  </body>
+</html>
